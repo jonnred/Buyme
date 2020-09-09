@@ -44,19 +44,55 @@ body{
 
 
 .productContainer{
+    margin:20px;
+    text-align:center;
     width: 400px;
     height: auto;
-    background-color: blue;
+    background-color: rgba(0, 0, 255, 0.089);
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.216), 10px 10px rgba(0, 0, 0, 0.116),15px 15px rgba(0, 0, 0, 0.016);
+    
+}
+.picture{
+    width: 400px;
+    position: relative;
 }
 .picture img{
-    margin:20px;
-    width: 300px;
-    height:300px;
-    background-color: rgb(77, 100, 54);
-
+    margin:auto;
+    width: 100%;
 }
 .imageStore{
     width: auto;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.219);
     margin: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.price{
+    color:rgb(0, 255, 0);
+    font-weight: bold  ;
+}
+.productContainer:hover{
+    cursor: pointer;
+}
+.productContainer:hover .picture img{
+    opacity:0;
+    transition: 1s;
+}
+.productContainer:hover .buy{
+    opacity:1;
+    transition: 1s;
+}
+.buy{
+    position: absolute;
+    text-align:center ;
+    left:50%;top:50%;
+    transform: translate(-50% , -50%);
+    color:green;
+    font-weight: bolder;
+    font-size: 2em;
+    background-color:rgb(15, 211, 8);
+    border-radius: 50%;
+    height: 30%;
+    opacity: 0;
 }
