@@ -9,6 +9,7 @@
 body{
     background-color: rgb(187, 187, 187);
     color:white;
+    perspective:;
 }
 .navBar{
     display: flex;
@@ -26,14 +27,37 @@ body{
     color:rgba(255, 255, 255, 0.8);
     text-decoration:none;   
 }
+.navBar .cart  {
+    flex-grow: 1;
+    text-align:center;
+    color:rgba(255, 255, 255, 0.8);
+    position: absolute;
+}
+.navBar .cart:hover{    
+    background-color:rgb(139, 137, 137);
+    position: absolute;
+    height: 50vh;
+    width: 25%;
+    transition: .2s;
+    z-index:1;
+    padding: 10px;
+    box-shadow: 10px 3px 5px rgba(128, 128, 128, 0.596);
+    border-radius: 10px;
+}
 .navBar a:hover {
-    border-bottom: white 3px solid;
+    color: grey;
 }
 .cart button{
     color: white;
     border:none;
     background-color:rgba(0, 0, 0, 0);
     cursor: pointer;
+}
+.addToCart{
+    background-color:  rgb(187, 187, 187);
+    width: 100%;
+    height: 70%;
+    box-sizing: border-box;
 }
 .content{
     background-color:rgba(220, 220, 220, 0.233);
@@ -42,14 +66,17 @@ body{
 }
 .content h3{
     color:grey;
-    font-size: 1em;
+    font-size: 1.2em;
     margin: 2% 0%;
+    width: 50%;
 }
 .content h1{
     color:rgb(70, 70, 70);
+    width: 60%;
+    
 }
 .currentPage{
-    color: blue;
+    color: grey;
 }
 
 
