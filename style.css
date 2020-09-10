@@ -29,6 +29,12 @@ body{
 .navBar a:hover {
     border-bottom: white 3px solid;
 }
+.cart button{
+    color: white;
+    border:none;
+    background-color:rgba(0, 0, 0, 0);
+    cursor: pointer;
+}
 .content{
     background-color:rgba(220, 220, 220, 0.233);
     padding: 20px;
@@ -81,11 +87,11 @@ body{
 }
 .productContainer:hover .picture img{
     opacity:0;
-    transition: 1s;
+    transition: .4s;
 }
 .productContainer:hover .buy{
     opacity:1;
-    transition: 1s;
+    transition: .4s;
 }
 .buy{
     position: absolute;
