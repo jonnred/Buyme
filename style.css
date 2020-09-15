@@ -114,6 +114,36 @@ body{
     height: 30%;
     opacity: 0;
 }
+.cartContainer{
+    position: relative;
+    display: flex;
+    text-align: center;
+    font-weight: 600;
+    color: chocolate;
+    justify-content: space-evenly;
+}
+#buyingImage ul li img{
+    width: 15%;
+    display: inline-block;
+    margin:0px;
+    padding: 0px;
+}
+#buyingImage ul{
+    display: inline-block;
+    margin-block-start: 0em;
+    list-style-type: none;
+    margin-block-end: 0em;
+    margin-inline-start: 5px;
+    padding-inline-start: 0px;
+
+}
+
+#buyingName{
+}
+#buyingPrice{
+}
+#buyingQuantity{
+}
 @media only screen and (max-width: 700px){
     .navBar a{
         display: none;
