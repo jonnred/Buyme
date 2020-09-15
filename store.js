@@ -5,5 +5,4 @@ const total = document.querySelector(".total")
 
 buy.addEventListener("click",(e)=>{
     console.log(price.textContent);
-
 })
