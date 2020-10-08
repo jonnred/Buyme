@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include ('./partials/head.ejs') %>
+
+<body>
+    <%- include ('./partials/nav.ejs') %>
+
+    <div class="content imageStore">
+    <% if (items.length > 0) { %>
+        <% items.forEach(items =>{ %>
+        <div class="productContainer">
+            <h4> <%= items.title %> </h4>
+            <div class="picture">
+                <div class="buy">$<%= items.price %></div>
+                <img <%= items.picture %> alt="jelly fifsh">
+                <div class="price"><%= items.price %></div>
+            </div>
+            <div class="description"><%= items.description %></div>
+        </div>
+        <% }) %>
+    <% } %>
+    </div>
+</body>
+
+</html>

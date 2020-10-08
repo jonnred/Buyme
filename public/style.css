@@ -48,14 +48,50 @@ body{
 }
 .content h3{
     color:grey;
-    font-size: 1.2em;
+    font-size: 1.2rem;
     margin: 2% 0%;
-    width: 50%;
+    width: 90%;
 }
 .content h1{
-    color:rgb(70, 70, 70);
+    color:rgb(202, 202, 202);
     width: 60%;
-    
+    font-weight: 900;
+    font-size: 1.6em;
+    text-transform: uppercase;
+}
+.frontPageDark{
+    width: 100%;
+    margin: 0%;
+    padding: 10%;
+    background-color: rgb(29, 29, 29);
+}
+.button{
+    width: 110px;
+    height: 7vh;
+    margin: 10px 10px 0px 0px;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 6px;
+}
+.button1{
+    background-color: rgb(136, 136, 136);
+    border:none;
+    color:white;
+    font-weight: bold;
+
+}
+.button1 a{
+    color: white;
+    text-decoration: none;
+}
+.button2{
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid  rgb(136, 136, 136);
+}
+.button2 a{
+    color:  rgb(136, 136, 136);
+    text-decoration: none;
+
 }
 .currentPage{
     color: grey;
@@ -152,7 +188,9 @@ body{
     padding: 0px;
     background-color: gainsboro;
 }
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 600px){
+
+    /*========                HOME PAGE               =======*/
     .navBar a{
         display: none;
     }
@@ -181,4 +219,13 @@ body{
         background-color: var(--burgerBackgroundColor);
         margin-bottom: 3px;
     }
+    .content h1{
+        font-size: 1.2em;
+        width: 90%;
+    }
+    .content h3{
+        font-size: .8em;
+        width: 90%;
+    }
 }
+/*]=====                  HOMEPAGE            ======*/
