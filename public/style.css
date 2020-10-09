@@ -1,5 +1,11 @@
 :root{
     --burgerBackgroundColor:rgb(235, 235, 235);
+    --color1: rgb(238, 132, 52);
+    --color2: rgb(201, 93, 99);
+    --color3: rgb(174, 135, 153);
+    --color4: rgb(113, 126, 195);
+    --color5: rgb(73, 109, 219);
+    --color6:  rgb(29, 29, 29);
 }
 *{
     margin: 0px;
@@ -7,9 +13,9 @@
     box-sizing: border-box;
 }
 body{
-    background-color: rgb(187, 187, 187);
+    background-color: var(--color6);
     color:white;
-    perspective:;
+
 }
 .navBar{
     display: flex;
@@ -19,41 +25,29 @@ body{
 }
 .logo{
     flex-grow: 2;
-    text-shadow: 2px 2px 5px black;
+    text-shadow: 2px 2px 5px var(--color5);
 }
 .navBar a{
     flex-grow: 1;
     text-align:center;
-    color:rgba(255, 255, 255, 0.8);
+    color:whitesmoke;
     text-decoration:none;   
-}
-.navBar .cart  {
-    flex-grow: 1;
-    text-align:center;
-    color:rgba(255, 255, 255, 0.8);
 }
 .navBar a:hover {
     color: grey;
 }
-.cart button{
-    color: white;
-    border:none;
-    background-color:rgba(0, 0, 0, 0);
-    cursor: pointer;
-}
 .content{
-    background-color:rgba(220, 220, 220, 0.233);
     padding: 20px;
     margin: 0% 10%;
 }
 .content h3{
-    color:grey;
+    color:var(--color2);
     font-size: 1.2rem;
     margin: 2% 0%;
     width: 90%;
 }
 .content h1{
-    color:rgb(202, 202, 202);
+    color:var(--color1);
     width: 60%;
     font-weight: 900;
     font-size: 1.6em;
@@ -63,7 +57,7 @@ body{
     width: 100%;
     margin: 0%;
     padding: 10%;
-    background-color: rgb(29, 29, 29);
+    background-color: var(--color6);
 }
 .button{
     width: 110px;
@@ -74,7 +68,7 @@ body{
     border-radius: 6px;
 }
 .button1{
-    background-color: rgb(136, 136, 136);
+    background-color: var(--color1);
     border:none;
     color:white;
     font-weight: bold;
@@ -86,23 +80,18 @@ body{
 }
 .button2{
     background-color: rgba(0, 0, 0, 0);
-    border: 2px solid  rgb(136, 136, 136);
+    border: 2px solid  var(--color2);
 }
 .button2 a{
-    color:  rgb(136, 136, 136);
+    color:  var(--color2);
     text-decoration: none;
 
 }
-.currentPage{
-    color: grey;
-}
-
-
 .productContainer{
+    position: relative;
     margin:20px;
     text-align:center;
-    width: 30rem;
-    height: auto;
+    max-width: 20rem;
     background-color: rgba(0, 0, 255, 0.089);
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.216), 10px 10px 10px rgba(0, 0, 0, 0.116),15px 15px 15px rgba(0, 0, 0, 0.016);
     
@@ -110,6 +99,9 @@ body{
 .picture{
     width: 100%;
     position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    height: 20vh;
 }
 .picture img{
     margin:auto;
@@ -123,12 +115,6 @@ body{
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
-.price{
-    display: none;
-}
-.productContainer:hover{
-    cursor: pointer;
-}
 .productContainer:hover .picture img{
     opacity:0;
     transition: .4s;
@@ -137,26 +123,33 @@ body{
     opacity:1;
     transition: .4s;
 }
+.productContainer button {
+    height: 2rem;
+    width: 3rem;
+    padding: 7px;
+    margin:10px;
+    background-color: rgb(0, 128, 0);
+    font-weight: 700;
+    border:none;
+    box-shadow: 1px 1px 3px;
+    cursor: pointer;
+}
 .buy{
+    display: flex;
     position: absolute;
     text-align:center ;
     left:50%;top:50%;
     transform: translate(-50% , -50%);
-    color:green;
+    color:greenyellow;
     font-weight: bolder;
     font-size: 2em;
     background-color:rgb(15, 211, 8);
     border-radius: 50%;
-    height: 30%;
+    height: 100px;
+    width: 100px;
     opacity: 0;
-}
-.cartContainer{
-    position: relative;
-    display: flex;
-    text-align: center;
-    font-weight: 600;
-    color: chocolate;
-    margin-bottom: 50px;
+    align-items: center;
+    justify-content: center;
 }
 @media only screen and (max-width: 600px){
 

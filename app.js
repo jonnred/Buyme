@@ -19,7 +19,7 @@ app.get('/store', (req, res) => {
         {
             title: 'Jelly Fish',
             price: '500',
-            description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt, amet.',
+            description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt, amet.'
         },
         {
             title: 'Jelly Fish',
