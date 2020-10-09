@@ -158,36 +158,6 @@ body{
     color: chocolate;
     margin-bottom: 50px;
 }
-.buyingImage{
-    width: 25%;
-    height: 100vh;
-    margin:0px;
-    padding: 0px;
-}
-#buyingImage img{
-    height:200px;
-    
-    padding:30px
-}
-
-.buyingName{
-    width: 25%;
-    margin:0px;
-    padding: 0px;
-    background-color: powderblue;
-}
-.buyingPrice{
-    width: 25%;
-    margin:0px;
-    padding: 0px;
-    background-color: gray;
-}
-.buyingQuantity{
-    width: 25%;
-    margin:0px;
-    padding: 0px;
-    background-color: gainsboro;
-}
 @media only screen and (max-width: 600px){
 
     /*========                HOME PAGE               =======*/

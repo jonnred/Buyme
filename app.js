@@ -20,7 +20,6 @@ app.get('/store', (req, res) => {
             title: 'Jelly Fish',
             price: '500',
             description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt, amet.',
-            picture:'src="./pictures/image4.jpg"'
         },
         {
             title: 'Jelly Fish',
@@ -38,6 +37,15 @@ app.get('/store', (req, res) => {
         items
     });
 });
+app.post('store' , (req , res) => {
+
+})
 app.get('/cart', (req, res) => {
     res.render('cart');
 });
+app.get('/sellpicture', (req , res) => {
+    res.render('addpicture');
+})
+app.use((req , res)=>{
+    res.render('404')
+})
