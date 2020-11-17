@@ -4,7 +4,15 @@
 <body>
     <%- include ('./partials/nav.ejs') %>
     <div class="content">
-        
+        <form action="/store" method="POST">
+            <label for="product title">Title</label>
+            <input type="text" id="title" value="">
+            <label for="product description">description</label>
+            <input type="text" id="description">
+            <label for="product price">Price</label>
+            <input type="text" id="price">
+            <input type="button" value="Submit" id="submit">
+        </form>
     </div>
 </body>
 

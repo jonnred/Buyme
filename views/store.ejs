@@ -4,19 +4,22 @@
 
 <body>
     <%- include ('./partials/nav.ejs') %>
-
     <div class="content imageStore">
     <% if (items.length > 0) { %>
         <% items.forEach(items =>{ %>
         <div class="productContainer">
-            <h4> <%= items.title %> </h4>
-            <div class="picture">
-                <div class="buy">$<%= items.price %></div>
-                <img src="./pictures/image1.jpg" alt="jelly fifsh">
-                <div class="price">$<%= items.price %></div>
-            </div>
-            <div class="description"><%= items.description %></div>
-            <button>Buy</button>
+            <form action="/cart" method="post">
+
+                <h4> <%= items.title %> </h4>
+                <div class="picture">
+                    <div class="buy">$<%= items.price %></div>
+                    <img src=" " alt="jelly fifsh">
+                    <div class="price">$<%= items.price %></div>
+                </div>
+                <div class="description"><%= items.description %></div>
+                <button>Add To Cart</button>
+
+            </form>
         </div>
         <% }) %>
     <% } %>
